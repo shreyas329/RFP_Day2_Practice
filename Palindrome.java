@@ -2,7 +2,7 @@ package forloop;
 
 import java.util.Scanner;
 
-public class RevInt {
+public class Palindrome {
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner (System.in);
@@ -15,6 +15,15 @@ public class RevInt {
 			reverse = reverse * 10 + rem;
 		}
 		System.out.println("The reverse of the number is: "+reverse);
+		if(num == reverse)
+		{
+			System.out.println("The given number is a palindrome..");
+		}
+		else
+		{
+			System.out.println("The given number is not a palindrome..");
+		}
+
 	}
 
 }
